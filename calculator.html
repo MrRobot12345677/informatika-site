@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Информатика | Калькулятор оценок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="logo" href="index.html">⌘ ИнфоМир</a>
+    <div class="links">
+      <a href="index.html">Главная</a>
+      <a href="informatics.html">Информатика</a>
+      <a class="active" href="calculator.html">Калькулятор оценок</a>
+    </div>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="page-title">
+    <span class="badge">Практика</span>
+    <h1>Калькулятор оценок</h1>
+    <p>Добавь свои оценки от 1 до 5 и узнай средний балл.</p>
+  </section>
+
+  <section class="calculator">
+    <div class="calc-input">
+      <h2>Твои оценки</h2>
+      <div id="grades" class="grades"></div>
+      <button class="btn secondary" id="addGrade">＋ Добавить оценку</button>
+      <button class="btn primary full" id="calculate">Рассчитать средний балл</button>
+      <button class="reset" id="reset">Очистить всё</button>
+    </div>
+    <div class="result">
+      <span>Средний балл</span>
+      <strong id="average">—</strong>
+      <p id="message">Добавь оценки, чтобы увидеть результат.</p>
+      <div class="result-line"><span>Количество оценок</span><b id="count">0</b></div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 ИнфоМир · Школьный проект</footer>
+<script src="script.js"></script>
+</body>
+</html>
